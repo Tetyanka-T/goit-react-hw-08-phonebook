@@ -1,0 +1,15 @@
+.header {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 80px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #2a363b;
+}
+
+/* height: 80px; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center; */

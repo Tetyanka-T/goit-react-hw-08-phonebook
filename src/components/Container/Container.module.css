@@ -1,0 +1,8 @@
+.container {
+  display: block;
+  margin: 15px auto;
+  text-align: center;
+  width: 800px;
+  border: 3px solid rgba(170, 50, 220, 0.6);
+  border-radius: 10px 20px;
+}
