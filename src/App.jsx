@@ -2,8 +2,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useEffect, lazy, Suspense } from 'react';
 import { Switch } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
-import Container from '@material-ui/core/Container';
-// import Container from 'components/Container/Container';
+// import Container from '@material-ui/core/Container';
+import Container from 'components/Container/Container';
 import Header from 'components/Header/Header';
 import { Spinner } from 'components/Loader/Loader';
 import { authOperations, authSelectors } from 'redux/auth';
@@ -30,7 +30,8 @@ export default function App() {
 
   return (
     !isFetchingCurrentUser && (
-      <Container maxWidth="md">
+      // <Container maxWidth="md">
+      <Container>
         <Header />
 
         <Switch>

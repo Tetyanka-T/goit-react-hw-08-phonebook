@@ -15,8 +15,12 @@ const ContactList = () => {
       {contacts.map(({ name, number, id }) => (
         <li className={s.item} key={id}>
           {name + ': ' + number}
-          <IconButton aria-label="delete" onClick={() => onDeleteContact(id)}>
-            <DeleteIcon color="primary" />
+          <IconButton
+            aria-label="delete"
+            onClick={() => onDeleteContact(id)}
+            className={s.iconButton}
+          >
+            <DeleteIcon />
           </IconButton>
           {/* <Button className={s.button} onClick={() => onDeleteContact(id)}>
             Delete

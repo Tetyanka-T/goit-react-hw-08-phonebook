@@ -19,11 +19,11 @@ export default function ContactsPage() {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className={s.contacts}>
       <Link to="/contacts/create" className={s.button}>
         Add contact
       </Link>
-      {contacts.length > 0 && <Filter />}
+      {contacts.length > 1 && <Filter />}
 
       {contacts && <ContactList />}
       {isLoading && <Spinner />}

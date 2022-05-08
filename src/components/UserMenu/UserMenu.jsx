@@ -17,14 +17,16 @@ export default function UserMenu() {
         className={s.link}
         activeClassName={s.activeLink}
       >
-        <ContactPhoneIcon />
-        <span className={s.contact}>Contacts</span>
+        <div className={s.iconContainer}>
+          <ContactPhoneIcon />
+          <span className={s.contact}>Contacts</span>
+        </div>
       </NavLink>
       <div className={s.container}>
         <span className={s.text}>Welcome, {name}</span>
         <Button
+          className={s.button}
           variant="contained"
-          color="primary"
           type="button"
           onClick={() => dispatch(authOperations.logOut())}
         >

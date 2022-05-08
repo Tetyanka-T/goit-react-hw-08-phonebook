@@ -1,7 +1,11 @@
+.contacts {
+  margin-top: 80px;
+  text-align: center;
+}
 .button {
   text-decoration: none;
   width: 100px;
-  background-color: #3f51b5;
+  background-color: #696969;
   color: #fff;
   padding: 8px 10px;
   border-radius: 4px;

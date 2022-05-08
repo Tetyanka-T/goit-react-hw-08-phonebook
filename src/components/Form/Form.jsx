@@ -59,7 +59,7 @@ function Form() {
   };
 
   return (
-    <>
+    <div className={s.formContainer}>
       {isLoading && <Redirect to="/contacts" />}
       <form className={s.form} onSubmit={handleSubmit}>
         <label className={s.label}>
@@ -93,7 +93,7 @@ function Form() {
           Add contact
         </button>
       </form>
-    </>
+    </div>
   );
 }
 
