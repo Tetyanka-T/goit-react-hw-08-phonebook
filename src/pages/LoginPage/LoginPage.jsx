@@ -2,19 +2,17 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import toast from 'react-hot-toast';
 import { authOperations } from 'redux/auth';
-import s from './RegisterPage.module.css';
+import s from './LoginPage.module.scss';
 
-export default function RegisterPage() {
+export default function LoginPage() {
   const dispatch = useDispatch();
-  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleChange = ({ target: { type, value } }) => {
     switch (type) {
-      case 'text':
-        return setName(value);
       case 'email':
         return setEmail(value);
       case 'password':
@@ -26,24 +24,21 @@ export default function RegisterPage() {
 
   const handleSubmit = e => {
     e.preventDefault();
-    dispatch(authOperations.register({ name, email, password }));
-    setName('');
+    const checkValue = email === '' || password === '';
+
+    if (checkValue) {
+      return toast.error('Error, empty field!');
+    }
+    dispatch(authOperations.logIn({ email, password }));
     setEmail('');
     setPassword('');
   };
 
   return (
     <div>
-      <h1 className={s.title}>Create account</h1>
+      <h1 className={s.title}>Log in</h1>
 
       <form onSubmit={handleSubmit} className={s.form}>
-        <TextField
-          type="text"
-          value={name}
-          label="Name"
-          variant="outlined"
-          onChange={handleChange}
-        />
         <TextField
           type="email"
           value={email}
@@ -58,12 +53,8 @@ export default function RegisterPage() {
           variant="outlined"
           onChange={handleChange}
         />
-        {/* <label>
-          Name
-          <input type="text" name="name" value={name} onChange={handleChange} />
-        </label>
 
-        <label>
+        {/* <label>
           Email
           <input
             type="email"
@@ -71,9 +62,9 @@ export default function RegisterPage() {
             value={email}
             onChange={handleChange}
           />
-        </label>
+        </label> */}
 
-        <label>
+        {/* <label>
           Password
           <input
             type="password"
@@ -83,8 +74,8 @@ export default function RegisterPage() {
           />
         </label> */}
 
-        <Button type="submit" variant="contained" color="primary">
-          Register now
+        <Button variant="contained" type="submit" className={s.button}>
+          To come in
         </Button>
       </form>
     </div>

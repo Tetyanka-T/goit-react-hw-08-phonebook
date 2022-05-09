@@ -1,0 +1,22 @@
+@use '../../components/variable' as *;
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.title {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  text-align: right;
+  color: $main-color;
+  font-family: $font-famile;
+  font-weight: 900;
+  font-size: 30px;
+}
+
+.button {
+  background-color: $light-color;
+  color: $text-color;
+}

@@ -4,7 +4,7 @@ import { Redirect } from 'react-router-dom';
 import toast from 'react-hot-toast';
 
 import { contactOperations, contactSelectors } from 'redux/contacts';
-import s from 'components/Form/Form.module.css';
+import s from 'components/Form/Form.module.scss';
 
 function Form() {
   const [name, setName] = useState('');

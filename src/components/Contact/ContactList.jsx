@@ -3,7 +3,7 @@ import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
 
 import { contactOperations, contactSelectors } from 'redux/contacts';
-import s from 'components/Contact/Contacts.module.css';
+import s from 'components/Contact/Contacts.module.scss';
 
 const ContactList = () => {
   const contacts = useSelector(contactSelectors.getVisibleContact);
@@ -22,9 +22,6 @@ const ContactList = () => {
           >
             <DeleteIcon />
           </IconButton>
-          {/* <Button className={s.button} onClick={() => onDeleteContact(id)}>
-            Delete
-          </Button> */}
         </li>
       ))}
     </ul>

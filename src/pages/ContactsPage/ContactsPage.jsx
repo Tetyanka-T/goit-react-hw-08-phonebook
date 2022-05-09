@@ -7,7 +7,7 @@ import { contactOperations, contactSelectors } from 'redux/contacts';
 import { Spinner } from 'components/Loader/Loader';
 import ContactList from 'components/Contact/ContactList';
 import Filter from 'components/Filter/Filter';
-import s from './ContactsPage.module.css';
+import s from './ContactsPage.module.scss';
 
 export default function ContactsPage() {
   const contacts = useSelector(contactSelectors.getContacts);

@@ -1,0 +1,21 @@
+@use '../variable' as *;
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px;
+  font-family: $font-famile;
+  font-weight: 400;
+  color: $light-color;
+  font-size: 18px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.activeLink {
+  color: $main-color;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}

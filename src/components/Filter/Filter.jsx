@@ -3,7 +3,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import { useSelector, useDispatch } from 'react-redux';
 import { changeFilter } from 'redux/contacts/contact-slice';
 import { contactSelectors } from 'redux/contacts';
-import s from 'components/Filter/Filter.module.css';
+import s from 'components/Filter/Filter.module.scss';
 
 const Filter = () => {
   const value = useSelector(contactSelectors.getFilter);
@@ -17,12 +17,6 @@ const Filter = () => {
       <Input type="text" value={value} onChange={onChange}>
         <SearchIcon />
       </Input>
-      {/* <input
-        className={s.input}
-        type="text"
-        value={value}
-        onChange={onChange}
-      /> */}
     </div>
   );
 };

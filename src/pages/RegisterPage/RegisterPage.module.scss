@@ -1,0 +1,24 @@
+@use '../../components/variable' as *;
+
+.title {
+  text-align: center;
+  font-family: $font-famile;
+  color: $light-color;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-family: $font-famile;
+  color: $light-color;
+}
+.button {
+  background-color: $light-color;
+  color: $text-color;
+  margin-top: 30px;
+}
+// .MuiOutlinedInput-root.Mui-focused.MuiOutlinedInput-notchedOutline {
+// color: $main-color;
+// border-color: $main-color;
+// }

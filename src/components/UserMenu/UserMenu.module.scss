@@ -1,3 +1,5 @@
+@use '../variable' as *;
+
 .container {
   display: flex;
   align-items: center;
@@ -6,17 +8,21 @@
   display: inline-block;
   text-decoration: none;
   padding: 12px;
-  font-weight: 500;
-  color: #696969;
+  font-family: $font-famile;
+  font-weight: 400;
+  font-size: 18px;
+  color: $light-color;
 }
 
 .activeLink {
-  color: #c0c0c0;
+  color: $main-color;
 }
 .text {
   margin-right: 15px;
-  font-weight: 700;
-  color: #696969;
+  color: $main-color;
+  font-family: $font-famile;
+  font-weight: 900;
+  font-size: 18px;
 }
 .iconContainer {
   display: flex;
@@ -29,6 +35,6 @@
   text-align: center;
 }
 .button {
-  background-color: #696969;
-  color: #fff;
+  background-color: $main-color;
+  color: $text-color;
 }

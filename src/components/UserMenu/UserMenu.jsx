@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import { useDispatch, useSelector } from 'react-redux';
 import { authSelectors, authOperations } from 'redux/auth';
-import s from './UserMenu.module.css';
+import s from './UserMenu.module.scss';
 
 export default function UserMenu() {
   const dispatch = useDispatch();
@@ -25,10 +25,10 @@ export default function UserMenu() {
       <div className={s.container}>
         <span className={s.text}>Welcome, {name}</span>
         <Button
-          className={s.button}
           variant="contained"
           type="button"
           onClick={() => dispatch(authOperations.logOut())}
+          className={s.button}
         >
           Exit
         </Button>

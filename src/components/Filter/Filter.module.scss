@@ -1,0 +1,14 @@
+@use '../variable' as *;
+
+.container {
+  text-align: right;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.title {
+  color: $main-color;
+  font-family: $font-famile;
+  font-weight: 400;
+  font-size: 20px;
+}
