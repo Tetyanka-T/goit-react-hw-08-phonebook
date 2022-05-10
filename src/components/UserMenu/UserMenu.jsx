@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import Button from '@material-ui/core/Button';
 import ContactPhoneIcon from '@material-ui/icons/ContactPhone';
 import { useDispatch, useSelector } from 'react-redux';
 import { authSelectors, authOperations } from 'redux/auth';
@@ -10,7 +9,7 @@ export default function UserMenu() {
   const name = useSelector(authSelectors.getUsername);
 
   return (
-    <>
+    <div className={s.heder}>
       <NavLink
         exact
         to="/contacts"
@@ -22,17 +21,17 @@ export default function UserMenu() {
           <span className={s.contact}>Contacts</span>
         </div>
       </NavLink>
-      <div className={s.container}>
+      <div className={s.containerUser}>
         <span className={s.text}>Welcome, {name}</span>
-        <Button
+        <button
           variant="contained"
           type="button"
           onClick={() => dispatch(authOperations.logOut())}
           className={s.button}
         >
           Exit
-        </Button>
+        </button>
       </div>
-    </>
+    </div>
   );
 }

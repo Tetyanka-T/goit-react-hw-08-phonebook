@@ -1,12 +1,6 @@
 @use '../variable' as *;
 
 .header {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  justify-content: center;
-  align-items: center;
-
-  min-height: 80px;
   margin-bottom: 16px;
   border-bottom: 1px solid $main-color;
 }

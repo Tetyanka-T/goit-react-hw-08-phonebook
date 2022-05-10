@@ -9,7 +9,7 @@
 .title {
   margin-top: 80px;
   margin-bottom: 50px;
-  text-align: right;
+  text-align: center;
   color: $main-color;
   font-family: $font-famile;
   font-weight: 900;
@@ -19,4 +19,10 @@
 .button {
   background-color: $light-color;
   color: $text-color;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    text-align: right;
+  }
 }

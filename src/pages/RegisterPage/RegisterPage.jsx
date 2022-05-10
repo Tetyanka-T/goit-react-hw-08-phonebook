@@ -58,31 +58,6 @@ export default function RegisterPage() {
           variant="outlined"
           onChange={handleChange}
         />
-        {/* <label>
-          Name
-          <input type="text" name="name" value={name} onChange={handleChange} />
-        </label>
-
-        <label>
-          Email
-          <input
-            type="email"
-            name="email"
-            value={email}
-            onChange={handleChange}
-          />
-        </label>
-
-        <label>
-          Password
-          <input
-            type="password"
-            name="password"
-            value={password}
-            onChange={handleChange}
-          />
-        </label> */}
-
         <Button type="submit" variant="contained" className={s.button}>
           Register now
         </Button>

@@ -53,27 +53,6 @@ export default function LoginPage() {
           variant="outlined"
           onChange={handleChange}
         />
-
-        {/* <label>
-          Email
-          <input
-            type="email"
-            name="email"
-            value={email}
-            onChange={handleChange}
-          />
-        </label> */}
-
-        {/* <label>
-          Password
-          <input
-            type="password"
-            name="password"
-            value={password}
-            onChange={handleChange}
-          />
-        </label> */}
-
         <Button variant="contained" type="submit" className={s.button}>
           To come in
         </Button>

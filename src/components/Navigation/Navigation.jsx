@@ -4,7 +4,7 @@ import s from './Navigation.module.scss';
 
 const Navigation = () => {
   return (
-    <nav>
+    <nav className={s.heder}>
       <NavLink exact to="/" className={s.link} activeClassName={s.activeLink}>
         <PhoneAndroidOutlinedIcon />
         Phone book

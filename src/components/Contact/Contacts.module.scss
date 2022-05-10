@@ -5,8 +5,7 @@
   flex-direction: column;
   margin-top: 30px;
   list-style: none;
-  text-align: center;
-  width: 300px;
+
   color: $main-color;
   font-family: $font-famile;
   font-weight: 400;
@@ -27,4 +26,24 @@
 .iconButton {
   margin-left: auto;
   color: $main-color;
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .list {
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 768px) {
+  .list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(200px);
+  }
+}
+@media screen and (min-width: 1260px) {
+  .list {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(300px);
+  }
 }
