@@ -9,12 +9,11 @@
 .containerUser {
   display: flex;
   align-items: center;
-  margin-left: 50px;
+  margin-left: auto;
 }
 .link {
   display: inline-block;
   text-decoration: none;
-  padding: 12px;
   font-family: $font-famile;
   color: $light-color;
 }
@@ -41,7 +40,7 @@
 }
 .button {
   text-decoration: none;
-  width: 80px;
+  width: 60px;
   border: none;
   background-color: $main-color;
   color: $text-color;
@@ -65,5 +64,8 @@
   .text {
     font-weight: 900;
     font-size: 20px;
+  }
+  .button {
+    width: 80px;
   }
 }

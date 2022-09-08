@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
-// import { Fab } from '@material-ui/core';
-// import AddIcon from '@material-ui/icons/Add';
 import { useDispatch, useSelector } from 'react-redux';
 import { contactOperations, contactSelectors } from 'redux/contacts';
 import { Spinner } from 'components/Loader/Loader';

@@ -1,7 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 import IconButton from '@material-ui/core/IconButton';
 import DeleteIcon from '@material-ui/icons/Delete';
-
 import { contactOperations, contactSelectors } from 'redux/contacts';
 import s from 'components/Contact/Contacts.module.scss';
 
